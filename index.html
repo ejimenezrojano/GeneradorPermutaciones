@@ -84,12 +84,11 @@
  Archive processed by SingleFile 
  url: http://ejimenezr.pagedemo.co/ 
  saved date: Wed Apr 25 2018 01:36:09 GMT-0500 (Hora de verano central (México)) 
---><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-											<meta name="robots" content="noindex, nofollow">
-				<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-		
-
-					<title>Permutaciones</title>
+--><head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="robots" content="noindex, nofollow">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<title>Permutaciones</title>
 		
 		<meta name="description" content="">
 		<meta name="keywords" content="">
@@ -184,6 +183,32 @@
 <link rel="stylesheet" type="text/css" href="./Permutaciones_files/031a761e2b05d2bed213fd1f07412755.css" media="screen">
 
 <script type="text/javascript" src="./Permutaciones_files/a5cb880a745154a6a1a45f3465215dfd.js.descarga"></script>
+<script language="javascript" type="text/javascript">
+function permuta (cad_I, cad_D) 
+
+{
+
+  if (cad_D.length == 1)
+  {
+  document.write(++conta + " = " + cad_I + cad_D + "<br>");
+  return;
+  }
+
+  for (var i =0; i < cad_D.length ; i++) 
+  {
+  permuta (cad_I + cad_D.charAt(i), cad_D.replace(cad_D.charAt(i),""));
+  } return;
+
+}
+
+function inicia() 
+{
+  var cLetra = document.getElementById("campo1").value;  
+  conta =0;
+  cadena =cLetra;
+  permuta ("",cadena);
+}
+</script>
 
 
 
@@ -614,29 +639,22 @@ screen and (min-width: 1000px) and (-webkit-max-device-pixel-ratio: 1.5)
 				</div>
 			</div>
 
-												<div class="page-block" id="page_block_header">
-						<div class="color-overlay"></div>
-						<div class="border-holder">
-							<div class="block-inner">
-																											<div class="page-element widget-container page-element-type-headline widget-headline " id="element-151">
-
-	
-<div class="contents"><h1><p style="text-align: left; line-height: 57px; font-size: 41px;"><font color="#f2f6f9">Bienvenido a Generador de Permutaciones.</font><br></p></h1></div>
+<div class="page-block" id="page_block_header">
+<div class="color-overlay"></div>
+<div class="border-holder">
+<div class="block-inner">
+ <div class="page-element widget-container page-element-type-headline widget-headline " id="element-151">
+  <div class="contents"><h1><p style="text-align: left; line-height: 57px; font-size: 41px;"><font color="#f2f6f9">Bienvenido a Generador de Permutaciones.</font><br></p></h1></div>
+ </div>
+ <div class="page-element widget-container page-element-type-image widget-image " id="element-170">
+   <div class="contents">
+	 <img src="./Permutaciones_files/1524636357-30222921-250x250x323x250x37x0-Combinaciones.JPG" style="margin-top: ;" alt="">
+   </div>
+ </div>
 </div>
-
-																													<div class="page-element widget-container page-element-type-image widget-image " id="element-170">
-
-	
-<div class="contents">
-						<img src="./Permutaciones_files/1524636357-30222921-250x250x323x250x37x0-Combinaciones.JPG" style="margin-top: ;" alt="">
-		
-	</div>
 </div>
-
-																																		</div>
-						</div>
-					</div>
-									<div class="page-block" id="page-block-00wo26qig3709lbmb85p63whfr">
+</div>
+<div class="page-block" id="page-block-00wo26qig3709lbmb85p63whfr">
 						<div class="color-overlay"></div>
 						<div class="border-holder">
 							<div class="block-inner">
@@ -786,38 +804,18 @@ screen and (min-width: 1000px) and (-webkit-max-device-pixel-ratio: 1.5)
 
 <div class="widget-container widget-form">
 	<div class="contents">
-		<form method="post" action="https://d.fastcdn.co/submissions" class="email-form" data="instapage-form" data-wid="103" novalidate="novalidate">
+		<form method="post" action="index.html" class="email-form" data="instapage-form" data-wid="103" novalidate="novalidate">
 					<input type="hidden" name="lpsSubmissionConfig" value="eyJhbGciOiJIUzI1NiJ9.eyJhcGkiOmZhbHNlLCJhc3luYyI6dHJ1ZSwiZG93bmxvYWRGaWxlIjpmYWxzZSwiZmllbGRzIjpbeyJpZCI6bnVsbCwidmFsdWUiOiJJbmdyZXNlIExpc3RhOiIsImRlZmF1bHRfdmFsdWUiOiJJbmdyZXNlIExpc3RhOiIsInR5cGUiOiJ0ZXh0IiwicmVxdWlyZWQiOnRydWUsIm5hbWUiOiJJbmdyZXNlIExpc3RhOiIsImVtYWlsIjpmYWxzZSwiZmllbGRfaWQiOjAsImhpZGVfbGFiZWwiOmZhbHNlfSx7InR5cGUiOiJ0ZXh0IiwiZGVmYXVsdF92YWx1ZSI6IlJlc3VsdGFkbzoiLCJuYW1lIjoiUmVzdWx0YWRvOiIsInZhbHVlIjoiUmVzdWx0YWRvOiIsInJlcXVpcmVkIjpmYWxzZSwiaGlkZV9sYWJlbCI6ZmFsc2UsImZpZWxkX2lkIjoxLCJlbWFpbCI6ZmFsc2V9XSwiZm9ybUlkIjoxMDMsImludGVncmF0aW9ucyI6W10sIm11bHRpc3RlcCI6ZmFsc2UsInBhZ2UiOnsiaWQiOjk4NjMyNDEsInZlcnNpb24iOjcsIm93bmVyIjoyNTQzNjY2LCJjdXN0b21lciI6Mjg2NzUzMSwiZm9sZGVyIjoyMjYxODMxfSwicmVkaXJlY3QiOmZhbHNlLCJzYXZlU3VibWlzc2lvbiI6dHJ1ZSwidGhhbmtZb3VNZXNzYWdlIjoiVGhhbmsgWW91ISIsInZhcmlhdGlvbiI6eyJpZCI6MSwibGlua2VkVmFyaWF0aW9uSWQiOjIsIm5hbWUiOiJBIiwiY3VzdG9tTmFtZSI6IkEifSwicmVDYXB0Y2hhIjpmYWxzZX0.kdjuKCSPAYegBOpDWYQed-j3UCNmQgdeFBDPDiId4lg">			<input type="hidden" name="variant" value="A">
-
-			
-						
-							<div class="input-holder field-text">
-					
-																		<label for="b0f0d21f1d3f0b6dee51df414cda8a3c-0" class="field-title outside-top label-outside">Ingrese Lista:</label>
-						
-						<div class="field-element ">
-							<input id="b0f0d21f1d3f0b6dee51df414cda8a3c-0" type="text" name="SW5ncmVzZSBMaXN0YTo=" value="" class="shortnice form-input  required  ">
-						</div>
-									</div>
-							<div class="input-holder field-text">
-					
-																		<label for="b0f0d21f1d3f0b6dee51df414cda8a3c-1" class="field-title outside-top label-outside">Resultado:</label>
-						
-						<div class="field-element ">
-							<input id="b0f0d21f1d3f0b6dee51df414cda8a3c-1" type="text" name="UmVzdWx0YWRvOg==" value="" class="shortnice form-input   ">
-						</div>
-									</div>
-			
-			
-			
-			
-												<button class="btn submit-button button_submit dynamic-button  corners  ">Generar Permutaciones</button>
-							
-							<input type="hidden" name="validation" value="Tzo4OiJzdGRDbGFzcyI6Mjp7czo2OiJmaWVsZHMiO2E6MTp7czoxNDoiSW5ncmVzZSBMaXN0YToiO086ODoic3RkQ2xhc3MiOjE6e3M6ODoicmVxdWlyZWQiO2I6MTt9fXM6NzoiZm9ybV9pZCI7czozMjoiYjBmMGQyMWYxZDNmMGI2ZGVlNTFkZjQxNGNkYThhM2MiO30=">
-			
-											<input type="hidden" name="thank-you-message" value="VGhhbmsgWW91IQ==">
-			
-					</form>
+                    <div class="input-holder field-text">
+					  <label for="b0f0d21f1d3f0b6dee51df414cda8a3c-0" class="field-title outside-top label-outside">Ingrese alguna frase:</label>
+					  <div class="field-element ">
+					    <input id="campo1" type="text" name="campo1" value="" class="shortnice form-input  required  ">
+					  </div>
+					</div>
+					<input type="button" value="Generar Permutaciones" class="btn submit-button button_submit dynamic-button  corners  " onclick="inicia();"/>
+					<input type="hidden" name="validation" value="Tzo4OiJzdGRDbGFzcyI6Mjp7czo2OiJmaWVsZHMiO2E6MTp7czoxNDoiSW5ncmVzZSBMaXN0YToiO086ODoic3RkQ2xhc3MiOjE6e3M6ODoicmVxdWlyZWQiO2I6MTt9fXM6NzoiZm9ybV9pZCI7czozMjoiYjBmMGQyMWYxZDNmMGI2ZGVlNTFkZjQxNGNkYThhM2MiO30=">
+			        <input type="hidden" name="thank-you-message" value="VGhhbmsgWW91IQ==">
+		</form>
 	</div>
 	<div style="clear: both"></div>
 </div>
